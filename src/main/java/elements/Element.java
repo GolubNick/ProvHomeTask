@@ -1,20 +1,23 @@
 package elements;
 
-import managers.GetDriver;
+import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 
-public class Element extends GetDriver implements IElement{
+import static com.codeborne.selenide.Selenide.$;
+
+public class Element implements IElement{
 
     String locator;
 
 
     @Override
     public boolean isVisible(){
-        try{
-            return driver.findElement(By.xpath(locator)).isDisplayed();
-        } catch (NoSuchElementException e){
-            return false;
-        }
+        waitForElement();
+        return $(By.xpath(locator)).exists();
+    }
+
+    @Override
+    public void waitForElement(){
+        $(By.xpath(locator)).waitUntil(Condition.appear, 2000l);
     }
 }

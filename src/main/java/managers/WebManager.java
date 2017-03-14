@@ -18,21 +18,8 @@ public class WebManager {
 
     private WebManager init() {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.setProperty("selenide.browser", "Chrome");
         return this;
-    }
-
-    public void navigateToUrl(String url) {
-        driver.navigate().to(url);
-    }
-
-    public WebDriver getDriver(){
-        return driver;
-    }
-
-    public void closeDriver(){
-        driver.quit();
     }
 
 }

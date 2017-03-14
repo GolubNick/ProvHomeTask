@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import static com.codeborne.selenide.Selenide.open;
+
 public class UpTests extends Assert {
 
     private final String URL = "http://book.theautomatedtester.co.uk";
@@ -14,11 +16,11 @@ public class UpTests extends Assert {
 
     @BeforeMethod
     protected void initDriver(){
-        WebManager.get().navigateToUrl(URL);
+        WebManager.get();
+        open(URL);
     }
 
     @AfterMethod
     protected void closeDriver(){
-        WebManager.get().closeDriver();
     }
 }

@@ -8,5 +8,7 @@ public interface IElement {
 
     default boolean isVisible(){return false;}
 
+    default void waitForElement(){}
+
 
 }

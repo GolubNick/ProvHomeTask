@@ -2,6 +2,8 @@ package elements;
 
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Selenide.$;
+
 public class Link extends Element {
 
     public Link(String locator){
@@ -10,11 +12,11 @@ public class Link extends Element {
 
     @Override
     public String getText() {
-        return driver.findElement(By.xpath(locator)).getText();
+        return $(By.xpath(locator)).getText();
     }
 
     @Override
     public void click() {
-        driver.findElement(By.xpath(locator)).click();
+        $(By.xpath(locator)).click();
     }
 }

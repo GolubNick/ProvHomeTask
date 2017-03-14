@@ -2,6 +2,8 @@ package elements;
 
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Selenide.$;
+
 public class Label extends Element {
 
     public Label(String locator){
@@ -10,6 +12,6 @@ public class Label extends Element {
 
     @Override
     public String getText() {
-        return driver.findElement(By.xpath(locator)).getText();
+        return $(By.xpath(locator)).getText();
     }
 }
