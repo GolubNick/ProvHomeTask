@@ -19,8 +19,4 @@ public class UpTests extends Assert {
         WebManager.get();
         open(URL);
     }
-
-    @AfterMethod
-    protected void closeDriver(){
-    }
 }

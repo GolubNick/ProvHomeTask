@@ -1,0 +1,10 @@
+<suite name="TestSuite">
+    <test name="TestTask">
+        <classes>
+            <class name="TestProgram" />
+                <methods>
+                    <include name="doTest" />
+                </methods>
+        </classes>
+    </test>
+</suite>
