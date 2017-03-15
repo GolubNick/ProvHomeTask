@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class Element implements IElement{
+public abstract class Element implements IElement{
 
     String locator;
 
