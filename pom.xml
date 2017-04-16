@@ -8,12 +8,7 @@
     <artifactId>Selenium_Test</artifactId>
     <version>1.0</version>
          
-         <profile>
-     <id>prod</id>
-     <activation>
-         <activeByDefault>true</activeByDefault>
-     </activation>
-         
+        
     <build>
              
      <resources>
@@ -60,8 +55,7 @@
                 </configuration>
                  </plugin>
         </plugins>
-    </build>
-                  </profile>
+    </build>          
 
     <dependencies>
         <dependency>
