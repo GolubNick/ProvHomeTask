@@ -7,6 +7,13 @@
     <groupId>Home_Work</groupId>
     <artifactId>Selenium_Test</artifactId>
     <version>1.0</version>
+         
+         <profile>
+     <id>prod</id>
+     <activation>
+         <activeByDefault>true</activeByDefault>
+     </activation>
+         
     <build>
              
      <resources>
@@ -54,6 +61,7 @@
                  </plugin>
         </plugins>
     </build>
+                  </profile>
 
     <dependencies>
         <dependency>
