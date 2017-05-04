@@ -7,10 +7,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-server:2.46.0" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.48" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.48" level="project" />
@@ -67,5 +71,8 @@
     <orderEntry type="library" name="Maven: com.codeborne:selenide:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.codeborne:phantomjsdriver:1.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.uncommons:reportng:1.1.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: velocity:velocity:1.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: velocity:velocity-dep:1.4" level="project" />
   </component>
 </module>
