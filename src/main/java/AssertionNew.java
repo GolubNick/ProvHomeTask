@@ -49,15 +49,16 @@ public class AssertionNew extends Assert{
     }
 
     private static String takeScreenShot(String nameFile){
-
-        String pathFile = "D:\\workspace\\provectus\\test-output\\html\\" + nameFile + System.currentTimeMillis() / 1000L + ".png";
+        File scrFile = null;
+//        String pathFile = "D:\\workspace\\provectus\\test-output\\html\\" + nameFile + System.currentTimeMillis() / 1000L + ".png";
         try {
-            File scrFile = Screenshots.takeScreenShotAsFile();
-            FileUtils.copyFile(scrFile, new File(pathFile));
+            scrFile = Screenshots.takeScreenShotAsFile();
+//            FileUtils.copyFile(scrFile, new File(pathFile));
         }
         catch (Exception e){
             e.printStackTrace();
         }
-        return pathFile;
+        System.out.println(scrFile.getAbsolutePath());
+        return scrFile.getAbsolutePath();
     }
 }
