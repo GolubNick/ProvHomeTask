@@ -16,7 +16,7 @@ public class AssertionNew extends Assert{
 
     public void logBusiness(double stepNumber, String message){
         this.stepNumber = stepNumber;
-        Reporter.log("<p><font color=\"000000\" style=\"background-color:#C0C0C0\">" + stepNumber + ") " + message + "</font></p>");
+        Reporter.log("<p><font color=\"000000\" style=\"background-color:#C0C0C0\">" + stepNumber + " " + message + "</font></p>");
     }
 
     public static void assertTrue(boolean condition, String message) {
@@ -41,7 +41,7 @@ public class AssertionNew extends Assert{
     static String format(Object actual, Object expected, String message, String step) {
         String formatted = "";
         if (null != message) {
-            formatted = step + ") " + message + "<br> ";
+            formatted = step + " " + message + "<br> ";
         }
 
         return formatted + "Expected: " + expected + CLOSING_CHARACTER +
@@ -58,7 +58,7 @@ public class AssertionNew extends Assert{
         catch (Exception e){
             e.printStackTrace();
         }
-        System.out.println(scrFile.getAbsolutePath());
+        System.out.println("!!!" + scrFile.getAbsolutePath());
         return scrFile.getAbsolutePath();
     }
 }
